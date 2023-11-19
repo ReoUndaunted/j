@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Janeland Network</title>
+    <!-- owl css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"
+    />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.3.1/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firore-cofunctions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/10.3.1/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href=""
+          ><img
+            src="images/JanelandLogo.png"
+            alt=""
+            style="height: 45px; width: 65px"
+          /><span class="logoText">janeland</span></a
+        >
+      </div>
+      <div class="mainMenu">
+        <nav>
+          <div class="navitems">
+            <a href="./">PRODUCTS</a>
+            <a href="./">SERVICES</a>
+            <a href="./">ABOUT</a>
+            <a href="./">CONTACT</a>
+          </div>
+
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hamMenu">
+        <nav>
+          <div class="navitems">
+            <a href="./">PRODUCTS</a>
+            <a href="./">SERVICES</a>
+            <a href="#about">ABOUT</a>
+            <a href="./">CONTACT</a>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="hamMenuIcon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+    </header>
+
+    <!-- heroSection -->
+    <div class="hero">
+      <div>
+        <span>discover</span>
+        <h1>Janeland Networks</h1>
+        <hr />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+          officiis dolore quaerat non necessitatibus qui, doloribus aliquam.
+        </p>
+        <a href="#">get started</a>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <div>
+              <h2>Happy People</h2>
+              <p>
+                Everyone deserves access to healthy and nutritious food, and we
+                are committed to making that a reality.
+              </p>
+              <!-- <a href="https://en.wikipedia.org/wiki/Jellyfish"
+                >explore</a
+              > -->
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <div>
+              <h2>Trades</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda veniam eveniet minima, blanditiis modi porro? Commodi
+                quos dolores et esse iure unde ullam eum. Nam est alias dicta ut
+                omnis!
+              </p>
+              <!-- <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank"
+                >explore</a -->
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--three">
+            <div>
+              <h2>we produce</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                accusamus voluptatem ex ad vitae, soluta similique optio nulla
+                quam, hic tempora doloremque amet veniam minus dolores,
+                accusantium blanditiis in ullam!
+              </p>
+              <!-- <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank"
+                >explore</a
+              > -->
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--four">
+            <div>
+              <h2>we package</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                sequi in recusandae laboriosam laborum? Ex facere autem dolores
+                quae? Numquam quasi, harum maiores quibusdam assumenda deleniti
+                quis nihil reiciendis nobis!
+              </p>
+              <!-- <a href="https://en.wikipedia.org/wiki/Shark" target="_blank"
+                >explore</a
+              > -->
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--five">
+            <div>
+              <h2>we sell</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequuntur ratione alias quam eaque suscipit officia, eum vero
+                dolore quae rem sint, quos cum exercitationem minima rerum saepe
+                beatae. Suscipit, delectus.
+              </p>
+              <!-- <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank"
+                >explore</a
+              > -->
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <img src="./images/Fast food (1440 × 400 px).png" alt="" class="bg" />
+      <img src="./images/Fast food (1440 × 400 px).png" alt="" class="bg2" />
+    </div>
+
+    <!-- about section end here -->
+    <div id="valuePreposition">
+      <div class="fullheight align-items-center" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-7 h-xs">
+              <img
+                src="./images/Screenshot 2023-10-13 094911.png"
+                alt=""
+                class="fullwidth"
+              />
+            </div>
+            <div class="col-5 col-xs-12 align-items-center">
+              <div class="about-slogan">
+                <h3>
+                  <span class="primary-color">Why</span>
+                  We
+                  <span class="primary-color">Do</span>
+                  What We
+                  <span class="primary-color">Do</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  delectus excepturi temporibus, laboriosam hic minus nostrum
+                  iste iure vitae labore voluptatem nisi repellendus debitis
+                  voluptatibus odio quia, amet aperiam autem. Laudantium libero
+                  nesciunt enim dolore, itaque quia voluptatibus corrupti vero
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  about section end here  -->
+    <!--  Service-->
+    <div style="margin: 10rem auto">
+      <h3 class="whatWeDo" style="font-size: clamp(2rem, 55%, 1rem)">
+        <span class="primary-color">Some</span>
+        of
+        <span class="primary-color">all</span>
+        What We
+        <span class="primary-color">Do</span>
+      </h3>
+      <div class="page-content">
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Processing</h2>
+            <p class="copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            </p>
+            <button class="btn">View More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Pcakaging</h2>
+            <p class="copy">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            </p>
+            <button class="btn">View More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">mechandising</h2>
+            <p class="copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn">View More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Trading</h2>
+            <p class="copy">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            </p>
+            <button class="btn">Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Products Section -->
+    <section
+      class="align-items-center bg-img bg-img-fixed"
+      id="food-menu-section"
+      style="background-image: url(./images/Fast\ food.png)"
+    >
+      <div class="container">
+        <div class="food-menu">
+          <h1>What will <span class="primary-color">you</span> choose today</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illo
+            dolor magnam earum, impedit incidunt. Dolorum ipsum ducimus
+            reprehenderit molestiae repellat, nostrum dolorem porro ea similique
+            qui, facere iste! Id?
+          </p>
+          <div class="food-category">
+            <button class="active">All</button>
+            <button>Products</button>
+            <button>Services</button>
+            <button>Sales</button>
+            <button>Trades</button>
+          </div>
+
+          <!--     food item start here     -->
+          <div class="food-item-wrap">
+            <div class="food-item">
+              <div class="item-wrap">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Meatball</h3>
+                    <span> IDR 25.000 </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item">
+              <div class="item-wrap">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Seafood Pasta with Shrimp</h3>
+                    <span> IDR 27.000 </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item">
+              <div class="item-wrap">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Spaghetti Carbonara</h3>
+                    <span> IDR 25.000 </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-item">
+              <div class="item-wrap">
+                <div class="item-img">
+                  <div
+                    class="img-holder bg-img"
+                    style="
+                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
+                    "
+                  ></div>
+                </div>
+                <div class="item-info">
+                  <div>
+                    <h3>Fried Rice</h3>
+                    <span> IDR 23.000 </span>
+                  </div>
+                  <div class="cart-btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--    food item end here      -->
+        </div>
+      </div>
+    </section>
+
+    <!--Partner Companies-->
+    <section class="game-section">
+      <h2 class="line-title">Our Brands</h2>
+      <div class="owl-carousel custom-carousel owl-theme">
+        <div
+          class="item active"
+          style="
+            background-image: url(./images/fwdbeannygoldpictures/DSC_1438.jpg);
+          "
+        >
+          <div class="item-desc">
+            <h3>BeannyGold Brand</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              iste, sapiente, nemo veniam non sit consequatur totam doloremque
+              asperiores ex nesciunt, cupiditate atque quisquam a adipisci ipsum
+              dignissimos minima vitae.
+            </p>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(./images/people.jpeg)">
+          <div class="item-desc">
+            <h3>Janeland Networks</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              error totam? Praesentium, sapiente beatae explicabo consequatur,
+              amet veritatis similique harum consequuntur odit culpa voluptas
+              cum dolor eveniet nesciunt esse quia?
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(./images/building3.jpeg)"
+        >
+          <div class="item-desc">
+            <h3>Janeland Global</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              culpa doloremque natus! Aperiam quis excepturi necessitatibus
+              unde, repellat minus quidem? Deleniti recusandae amet fuga odio
+              totam magni accusamus sit! Quas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>+234 801 2073 6053</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>janelandnetworks@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo logo">
+                  <div>
+                    <a href=""
+                      ><img
+                        src="images/JanelandLogo.png"
+                        alt=""
+                        style="height: 45px; width: 65px"
+                      /><span style="margin: 0 1rem">janeland </span></a
+                    >
+                  </div>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2016, All Right Reserved
+                  <a href="https://codepen.io/anupkumar92/">Janeland Global</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- swiper js -->
+    <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadEl = document.querySelector('#load');
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth',
+            'database',
+            'firestore',
+            'functions',
+            'messaging',
+            'storage',
+            'analytics',
+            'remoteConfig',
+            'performance',
+          ].filter((feature) => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(
+            ', '
+          )}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent =
+            'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

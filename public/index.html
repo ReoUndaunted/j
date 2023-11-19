@@ -1,662 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Janeland Network</title>
-    <!-- owl css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- swiper css -->
     <link
       rel="stylesheet"
       href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"
     />
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.3.1/firebase-auth-compat.js"></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-database-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-firestore-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firore-cofunctions-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-messaging-compat.js"
-    ></script>
-    <script defer src="/__/firebase/10.3.1/firebase-storage-compat.js"></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-analytics-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-remote-config-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/10.3.1/firebase-performance-compat.js"
-    ></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Janeland</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href=""
-          ><img
-            src="images/JanelandLogo.png"
-            alt=""
-            style="height: 45px; width: 65px"
-          /><span class="logoText">janeland</span></a
-        >
-      </div>
-      <div class="mainMenu">
-        <nav>
-          <div class="navitems">
-            <a href="./">PRODUCTS</a>
-            <a href="./">SERVICES</a>
-            <a href="./">ABOUT</a>
-            <a href="./">CONTACT</a>
-          </div>
+    <!-- <div class="loader"><a href="https://google.com">Google</a></div> -->
 
-          <div class="search-container">
-            <input type="text" placeholder="Search..." class="search-input" />
-            <button type="submit" class="search-button">
-              <i class="fas fa-search"></i>
-            </button>
+    <main>
+      <!-- Nav Section -->
+      <nav>
+        <div class="logo">
+          <img src="./images/JanelandLogo.png" alt="" /><a
+            href="#"
+            class="logoText"
+            >JANELAND NETWORKS</a
+          >
+          <div class="hamMenuIconOpen">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
           </div>
-        </nav>
-      </div>
-
-      <div class="hamMenu">
-        <nav>
-          <div class="navitems">
-            <a href="./">PRODUCTS</a>
-            <a href="./">SERVICES</a>
-            <a href="#about">ABOUT</a>
-            <a href="./">CONTACT</a>
-          </div>
-          <div class="search-container">
-            <input type="text" placeholder="Search..." class="search-input" />
-            <button type="submit" class="search-button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </nav>
-      </div>
-      <div class="hamMenuIcon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </div>
-    </header>
-
-    <!-- heroSection -->
-    <div class="hero">
-      <div>
-        <span>discover</span>
-        <h1>Janeland Networks</h1>
-        <hr />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
-          officiis dolore quaerat non necessitatibus qui, doloribus aliquam.
-        </p>
-        <a href="#">get started</a>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--one">
-            <div>
-              <h2>Happy People</h2>
-              <p>
-                Everyone deserves access to healthy and nutritious food, and we
-                are committed to making that a reality.
-              </p>
-              <!-- <a href="https://en.wikipedia.org/wiki/Jellyfish"
-                >explore</a
-              > -->
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide--two">
-            <div>
-              <h2>Trades</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda veniam eveniet minima, blanditiis modi porro? Commodi
-                quos dolores et esse iure unde ullam eum. Nam est alias dicta ut
-                omnis!
-              </p>
-              <!-- <a href="https://en.wikipedia.org/wiki/Seahorse" target="_blank"
-                >explore</a -->
-              >
-            </div>
-          </div>
-
-          <div class="swiper-slide swiper-slide--three">
-            <div>
-              <h2>we produce</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
-                accusamus voluptatem ex ad vitae, soluta similique optio nulla
-                quam, hic tempora doloremque amet veniam minus dolores,
-                accusantium blanditiis in ullam!
-              </p>
-              <!-- <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank"
-                >explore</a
-              > -->
-            </div>
-          </div>
-
-          <div class="swiper-slide swiper-slide--four">
-            <div>
-              <h2>we package</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                sequi in recusandae laboriosam laborum? Ex facere autem dolores
-                quae? Numquam quasi, harum maiores quibusdam assumenda deleniti
-                quis nihil reiciendis nobis!
-              </p>
-              <!-- <a href="https://en.wikipedia.org/wiki/Shark" target="_blank"
-                >explore</a
-              > -->
-            </div>
-          </div>
-
-          <div class="swiper-slide swiper-slide--five">
-            <div>
-              <h2>we sell</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequuntur ratione alias quam eaque suscipit officia, eum vero
-                dolore quae rem sint, quos cum exercitationem minima rerum saepe
-                beatae. Suscipit, delectus.
-              </p>
-              <!-- <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank"
-                >explore</a
-              > -->
-            </div>
+          <div class="hamMenuIconClose">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-      <img src="./images/Fast food (1440 × 400 px).png" alt="" class="bg" />
-      <img src="./images/Fast food (1440 × 400 px).png" alt="" class="bg2" />
-    </div>
 
-    <!-- about section end here -->
-    <div id="valuePreposition">
-      <div class="fullheight align-items-center" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-7 h-xs">
+        <div class="navitems">
+          <ul class="navitems__ul">
+            <li><a href="">About</a></li>
+            <li><a href="">Companies</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero Section-->
+      <section class="hero">
+        <div class="hero__img">
+          <div class="heroImg__bg stacked">
+            <!-- <img src="./assets/heroImg.png" alt="" /> -->
+            <div class="contentLoop">
+              <img src="./assets/heroImg1.jpg" alt="" class="heroImg" />
+            </div>
+            <div class="contentLoop">
               <img
-                src="./images/Screenshot 2023-10-13 094911.png"
+                src="./assets/_28148de4-21f6-427a-816f-9b60fa6bc77f.jpeg"
                 alt=""
-                class="fullwidth"
+                class="heroImg"
               />
             </div>
-            <div class="col-5 col-xs-12 align-items-center">
-              <div class="about-slogan">
-                <h3>
-                  <span class="primary-color">Why</span>
-                  We
-                  <span class="primary-color">Do</span>
-                  What We
-                  <span class="primary-color">Do</span>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  delectus excepturi temporibus, laboriosam hic minus nostrum
-                  iste iure vitae labore voluptatem nisi repellendus debitis
-                  voluptatibus odio quia, amet aperiam autem. Laudantium libero
-                  nesciunt enim dolore, itaque quia voluptatibus corrupti vero
-                </p>
-              </div>
+
+            <div class="contentLoop">
+              <img
+                src="./assets/Happy-african-american-woman-eating-pizza-537212683_3499x2638-scaled.jpeg"
+                alt=""
+                class="heroImg"
+              />
+            </div>
+
+            <div class="contentLoop">
+              <img src="./assets/OIP.jpeg" alt="" class="heroImg" />
+            </div>
+
+            <div class="contentLoop">
+              <img src="./assets/image.png" alt="" class="heroImg" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!--  about section end here  -->
-    <!--  Service-->
-    <div style="margin: 10rem auto">
-      <h3 class="whatWeDo" style="font-size: clamp(2rem, 55%, 1rem)">
-        <span class="primary-color">Some</span>
-        of
-        <span class="primary-color">all</span>
-        What We
-        <span class="primary-color">Do</span>
-      </h3>
-      <div class="page-content">
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Processing</h2>
-            <p class="copy">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            </p>
-            <button class="btn">View More</button>
+
+        <div class="hero__content">
+          <p class="heroContent__welcome">Welcome to</p>
+          <h1 class="heroContent__subtitle1">JANELAND</h1>
+          <h2 class="heroContent__title">Processors And Merchandisers</h2>
+          <h2 class="heroContent__subtitle1">of</h2>
+          <br />
+          <h2 class="heroContent__subtitle2">African Food Produce</h2>
+          <div class="heroSellingContainer stacked">
+            <div class="contentLoop">
+              <h3 class="heroSelling">From Our Heart to Your Home</h3>
+              <p>
+                Every product is a testament to our love for African cuisine. We
+                don't just help in trading, selling, or merchandising food
+                products. We are <span style="font-weight: 900">sharing</span> a
+                piece African's heritage with you.
+              </p>
+            </div>
+            <div class="contentLoop">
+              <h3 class="heroSelling">
+                Nourishing Your Body, Nurturing Your Soul!
+              </h3>
+              <p>
+                Every food is more than just sustenance. It’s a way of life.
+                Experience the joy of
+                <span style="font-weight: 900">healthy eating</span> with our
+                range of African food products.
+              </p>
+            </div>
+            <div class="contentLoop">
+              <h3 class="heroSelling">Experience the Taste of Togetherness</h3>
+              <p>
+                Every food has the power to bring people together. With
+                <span style="font-weight: 900">Janeland</span>, enjoy the
+                communal spirit of African dining from the comfort of your home.
+              </p>
+            </div>
+            <div class="contentLoop">
+              <h3 class="heroSelling">Feeding Dreams, Fueling Ambitions</h3>
+              <p>
+                We’re more than a food company. We’re a partner in your journey
+                towards a healthier lifestyle. Let us take the stress out of
+                <span style="font-weight: 900">healthy eating</span>, so you can
+                focus on living your best life.
+              </p>
+            </div>
+            <div class="contentLoop">
+              <h3 class="heroSelling">Savor the Richness of Africa</h3>
+              <p>
+                Immerse yourself in the diverse and vibrant flavors of Africa
+                with <span style="font-weight: 900">Janeland Networks.</span> We
+                bring the continent’s culinary treasures right to your doorstep!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Pcakaging</h2>
-            <p class="copy">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-            </p>
-            <button class="btn">View More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">mechandising</h2>
-            <p class="copy">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button class="btn">View More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Trading</h2>
-            <p class="copy">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            </p>
-            <button class="btn">Coming Soon</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Products Section -->
-    <section
-      class="align-items-center bg-img bg-img-fixed"
-      id="food-menu-section"
-      style="background-image: url(./images/Fast\ food.png)"
-    >
-      <div class="container">
-        <div class="food-menu">
-          <h1>What will <span class="primary-color">you</span> choose today</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illo
-            dolor magnam earum, impedit incidunt. Dolorum ipsum ducimus
-            reprehenderit molestiae repellat, nostrum dolorem porro ea similique
-            qui, facere iste! Id?
+          <p class="heroContent__paragraph">
+            Taking the stress of <span>Healthy Eating </span> off you!
           </p>
-          <div class="food-category">
-            <button class="active">All</button>
-            <button>Products</button>
-            <button>Services</button>
-            <button>Sales</button>
-            <button>Trades</button>
-          </div>
-
-          <!--     food item start here     -->
-          <div class="food-item-wrap">
-            <div class="food-item">
-              <div class="item-wrap">
-                <div class="item-img">
-                  <div
-                    class="img-holder bg-img"
-                    style="
-                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
-                    "
-                  ></div>
-                </div>
-                <div class="item-info">
-                  <div>
-                    <h3>Meatball</h3>
-                    <span> IDR 25.000 </span>
-                  </div>
-                  <div class="cart-btn">
-                    <i class="bx bx-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="food-item">
-              <div class="item-wrap">
-                <div class="item-img">
-                  <div
-                    class="img-holder bg-img"
-                    style="
-                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
-                    "
-                  ></div>
-                </div>
-                <div class="item-info">
-                  <div>
-                    <h3>Seafood Pasta with Shrimp</h3>
-                    <span> IDR 27.000 </span>
-                  </div>
-                  <div class="cart-btn">
-                    <i class="bx bx-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="food-item">
-              <div class="item-wrap">
-                <div class="item-img">
-                  <div
-                    class="img-holder bg-img"
-                    style="
-                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
-                    "
-                  ></div>
-                </div>
-                <div class="item-info">
-                  <div>
-                    <h3>Spaghetti Carbonara</h3>
-                    <span> IDR 25.000 </span>
-                  </div>
-                  <div class="cart-btn">
-                    <i class="bx bx-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="food-item">
-              <div class="item-wrap">
-                <div class="item-img">
-                  <div
-                    class="img-holder bg-img"
-                    style="
-                      background-image: url(./images/fwdbeannygoldpictures/DSC_1446.jpg);
-                    "
-                  ></div>
-                </div>
-                <div class="item-info">
-                  <div>
-                    <h3>Fried Rice</h3>
-                    <span> IDR 23.000 </span>
-                  </div>
-                  <div class="cart-btn">
-                    <i class="bx bx-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--    food item end here      -->
         </div>
-      </div>
-    </section>
+        <!-- <div class="floating__btn">
+          <a href="./index2.html"
+            >GET STARTED<img
+              src="./assets/expand_more_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Click here to learn moreClick here to learn more"
+          /></a>
+        </div> -->
+      </section>
 
-    <!--Partner Companies-->
-    <section class="game-section">
-      <h2 class="line-title">Our Brands</h2>
-      <div class="owl-carousel custom-carousel owl-theme">
-        <div
-          class="item active"
-          style="
-            background-image: url(./images/fwdbeannygoldpictures/DSC_1438.jpg);
-          "
-        >
-          <div class="item-desc">
-            <h3>BeannyGold Brand</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              iste, sapiente, nemo veniam non sit consequatur totam doloremque
-              asperiores ex nesciunt, cupiditate atque quisquam a adipisci ipsum
-              dignissimos minima vitae.
-            </p>
+      <!-- about Section -->
+      <section class="about">
+        <h2 id="aboutUs" class="heading1">ABOUT US</h2>
+        <div class="aboutSec1">
+          <div class="aboutVideo">
+            <div class="videoWrapper">
+              <video
+                style="height: 35vh"
+                src="./assets/welcome to Janeland.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+          </div>
+          <p class="aboutVideoTitle">
+            <span class="heading" style="margin-inline: auto">&#9757;</span>
+            Watch to learn more about JANELAND
+          </p>
+        </div>
+        <div class="aboutSec2">
+          <h2 class="aboutContent heading2">Our Offer</h2>
+          <p class="aboutContentBody1">
+            We understand that as a busy professional, the stress of healthy
+            eating can be overwhelming, especially when you’re juggling a hectic
+            schedule.
+          </p>
+          <p class="aboutContentBody2">
+            Imagine the frustration, the time to prepare nutritious meals, the
+            inconvenience of meal prep and the lack of healthy, easy-to-prepare
+            options that's added to your daily stress.
+          </p>
+          <p class="aboutContentBody2">
+            At Janeland Global, we’re committed to making healthy eating
+            accessible and convenient. Our products and services go beyond food,
+            food processing, and merchandising - they’re a promise of a
+            healthier, more convenient life. We’re not only providing food -
+            we’re taking the stress out of healthy eating and simplifying your
+            journey to a better, stress-free life.
+          </p>
+          <div class="aboutContentCTA">
+            <button class="btn">Click Here to Contact Us</button>
           </div>
         </div>
-        <div class="item" style="background-image: url(./images/people.jpeg)">
-          <div class="item-desc">
-            <h3>Janeland Networks</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-              error totam? Praesentium, sapiente beatae explicabo consequatur,
-              amet veritatis similique harum consequuntur odit culpa voluptas
-              cum dolor eveniet nesciunt esse quia?
-            </p>
-          </div>
-        </div>
-        <div
-          class="item"
-          style="background-image: url(./images/building3.jpeg)"
-        >
-          <div class="item-desc">
-            <h3>Janeland Global</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              culpa doloremque natus! Aperiam quis excepturi necessitatibus
-              unde, repellat minus quidem? Deleniti recusandae amet fuga odio
-              totam magni accusamus sit! Quas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-      <div class="container">
-        <div class="footer-cta pt-5 pb-5">
-          <div class="row">
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="cta-text">
-                  <h4>Find us</h4>
-                  <span>1010 Avenue, sw 54321, chandigarh</span>
-                </div>
-              </div>
+      <!-- Benefits Section -->
+      <section class="benefits">
+        <h3 class="heading1">Benefits</h3>
+        <div class="benefit">
+          <div class="benefit1">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-1.svg" alt="Stay healthy icon" />
+              <h3>Stay healthy</h3>
             </div>
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="fas fa-phone"></i>
-                <div class="cta-text">
-                  <h4>Call us</h4>
-                  <span>+234 801 2073 6053</span>
-                </div>
-              </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
             </div>
-            <div class="col-xl-4 col-md-4 mb-30">
-              <div class="single-cta">
-                <i class="far fa-envelope-open"></i>
-                <div class="cta-text">
-                  <h4>Mail us</h4>
-                  <span>janelandnetworks@gmail.com</span>
-                </div>
-              </div>
+          </div>
+          <div class="benefit2">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-3.svg" alt="MAke Gain icon" />
+              <h3>Make Gain</h3>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
+            </div>
+          </div>
+          <div class="benefit3">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-1.svg" alt="Work Less icon" />
+              <h3>Work Less</h3>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
             </div>
           </div>
         </div>
-        <div class="footer-content pt-5 pb-5">
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 mb-50">
-              <div class="footer-widget">
-                <div class="footer-logo logo">
-                  <div>
-                    <a href=""
-                      ><img
-                        src="images/JanelandLogo.png"
-                        alt=""
-                        style="height: 45px; width: 65px"
-                      /><span style="margin: 0 1rem">janeland </span></a
-                    >
-                  </div>
-                </div>
-                <div class="footer-text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
-                    sed do eiusmod tempor incididuntut consec tetur adipisicing
-                    elit,Lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-                <div class="footer-social-icon">
-                  <span>Follow us</span>
-                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                </div>
-              </div>
+      </section>
+
+      <!-- Service -->
+      <section id="services">
+        <h3 class="whatWeDo heading1">
+          Some Of
+          <span style="color: var(--primary-color)">What</span>
+          We Do
+        </h3>
+        <div class="page-content">
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Efficient Food Processing</h2>
+              <p class="copy">
+                services that transform raw ingredients into market-ready food
+                products. We handle everything from washing, cutting, and
+                peeling to cooking, freezing, and packaging.
+              </p>
+              <button class="btn">View More</button>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Useful Links</h3>
-                </div>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">services</a></li>
-                  <li><a href="#">portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">Expert Team</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Latest News</a></li>
-                </ul>
-              </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Quality Packaging Solutions</h2>
+              <p class="copy">
+                We provide top-notch packaging solutions that ensure the
+                freshness and quality of your food products are preserved and
+                provides convenience for consumers.
+              </p>
+              <button class="btn">Contact Us</button>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Subscribe</h3>
-                </div>
-                <div class="footer-text mb-25">
-                  <p>
-                    Don’t miss to subscribe to our new feeds, kindly fill the
-                    form below.
-                  </p>
-                </div>
-                <div class="subscribe-form">
-                  <form action="#">
-                    <input type="text" placeholder="Email Address" />
-                    <button><i class="fab fa-telegram-plane"></i></button>
-                  </form>
-                </div>
-              </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Curated Merchandising Services</h2>
+              <p class="copy">
+                We help you select the right products, manage inventory
+                efficiently, and create opportunities that draw customers in.
+                Our goal is to increase your sales and maximize profitability.
+              </p>
+              <button class="btn">View More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2 class="title">Global Food Trading</h2>
+              <p class="copy">
+                Our global food trading services connect you with the best food
+                producers. We ensure you get the best quality products at the
+                most competitive prices.
+              </p>
+              <button class="btn">Coming Soon</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="copyright-area">
+      </section>
+      <!-- Testimonials Section -->
+      <section class="testimonials__section stacked2">
+        <div class="testimonial__bg">
+          <h3 class="testimonials heading1">What People Say</h3>
+          <div class="testimonials__content">
+            <div class="testifier__testimony">
+              <h3 class="testifier heading2">Mr John Doe</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita commodi cupiditate voluptate obcaecati beatae nam ipsum
+                modi quas, eveniet aliquid veritatis odit nobis mollitia numquam
+                sit at eum ipsa quibusdam!
+              </p>
+            </div>
+            <div class="testifier__avatar">
+              <img src="./images/ideogram.jpeg" alt="Testimonials Image" />
+              <h4>Testifier's Job post</h4>
+            </div>
+          </div>
+        </div>
+        <div class="stacked2">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </section>
+
+      <!-- Our Brands -->
+      <section class="ourBrands">
+        <div class="ourBrand heading1">Our Brands</div>
+        <div class="brands">
+          <!-- partial:index.partial.html -->
+
+          <div
+            class="brand box-1"
+            style="background: url(./images/building.jpeg)"
+            data-text="BeannyGold"
+            onclick="toggleDetails(this)"
+          >
+            <div class="details">
+              <p>
+                BeannyGold is a brand that offers a variety of bean products.
+                Our products are packaged to make healthy eating convenient,
+                stress-free, and easy for busy people around the world
+              </p>
+              <a href="another-page.html">Visit BeannyGold.com</a>
+            </div>
+          </div>
+          <div
+            class="brand box-2"
+            style="background: url(./images/building2.jpeg)"
+            data-text="Janeland Networks"
+            onclick="toggleDetails(this)"
+          >
+            <div class="details">
+              <p>
+                Janeland Networks is a Domestic For-Profit Corporation in the
+                State of Texas. The company was established on Monday, December
+                30, 20192
+              </p>
+              <a href="#">Janeland Networks</a>
+            </div>
+          </div>
+          <div
+            class="brand box-3"
+            style="background: url(./images/building3.jpeg)"
+            data-text="Janeland Global"
+            onclick="toggleDetails(this)"
+          >
+            <div class="details">
+              <p>
+                Sister company to Janeland Networks. More information about
+                Janeland Global will be released in the near future!
+              </p>
+              <a>Coming Soon</a>
+            </div>
+          </div>
+          <!-- <div class="brand box-4" style="--img: url(https://i.postimg.cc/KjqWx5ft/img-4.jpg);" data-text="Tsuki"></div>
+	<div class="brand box-5" style="--img: url(https://i.postimg.cc/nrcWyW4H/img-5.jpg);" data-text="Mitsui"></div> -->
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="benefits">
+        <h3 class="heading2">MEET OUR TEAM</h3>
+        <div class="benefit">
+          <div class="benefit1">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-1.svg" alt="Stay healthy icon" />
+              <h3>Stay healthy</h3>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
+            </div>
+          </div>
+          <div class="benefit2">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-3.svg" alt="MAke Gain icon" />
+              <h3>Make Gain</h3>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
+            </div>
+          </div>
+          <div class="benefit3">
+            <div class="benefit__Img">
+              <img src="./images/ellipse-1.svg" alt="Work Less icon" />
+              <h3>Work Less</h3>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
+              doloribus reprehenderit nam quae at animi consequatur. Nam
+              eveniet, rerum veritatis in deleniti nisi odit?
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="takeAction">
+        <div class="cta__img"><img src="" alt="CTA Image" /></div>
+        <div class="cta__content">
+          <h3 class="heading1">What you should do</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            commodi cupiditate voluptate obcaecati beatae nam ipsum modi quas,
+            eveniet aliquid veritatis odit nobis mollitia numquam sit at eum
+            ipsa quibusdam!
+          </p>
+          <div>Contact form</div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer-section">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-              <div class="copyright-text">
-                <p>
-                  Copyright &copy; 2016, All Right Reserved
-                  <a href="https://codepen.io/anupkumar92/">Janeland Global</a>
-                </p>
+          <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Find us</h4>
+                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span>+234 801 2073 6053</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span>janelandnetworks@gmail.com</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-              <div class="footer-menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Terms</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Policy</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo logo">
+                    <div>
+                      <a href=""
+                        ><img
+                          src="images/JanelandLogo.png"
+                          alt=""
+                          style="height: 45px; width: 65px"
+                        /><span style="margin: 0 1rem">janeland </span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="footer-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                      sed do eiusmod tempor incididuntut consec tetur
+                      adipisicing elit,Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f facebook-bg"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"
+                      ><i class="fab fa-google-plus-g google-bg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Subscribe</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                      Don’t miss to subscribe to our new feeds, kindly fill the
+                      form below.
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address" />
+                      <button><i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-
-    <!-- swiper js -->
-    <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
-    <!-- swiper js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const loadEl = document.querySelector('#load');
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth',
-            'database',
-            'firestore',
-            'functions',
-            'messaging',
-            'storage',
-            'analytics',
-            'remoteConfig',
-            'performance',
-          ].filter((feature) => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(
-            ', '
-          )}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent =
-            'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright &copy; 2016, All Right Reserved
+                    <a href="https://codepen.io/anupkumar92/"
+                      >Janeland Global</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
