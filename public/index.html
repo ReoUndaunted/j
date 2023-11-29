@@ -24,7 +24,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
+     <meta name="description" content="Contact page of janelandnewworks. A processer and merchandizer of food and food produce from Africa.">
     <title>Janeland</title>
+    
+    <link rel="icon" href="./images/JanelandLogo.png" type="image/png"  style="border-radius: 50%" sizes="16x16">
   </head>
   <body>
     <!-- <div class="loader"><a href="https://google.com">Google</a></div> -->
@@ -33,7 +36,7 @@
       <!-- Nav Section -->
       <nav>
         <div class="logo">
-          <img src="./images/JanelandLogo.png" alt="" /><a
+          <img src="./images/JanelandLogo.png" alt="janelandnetworks Logo" /><a
             href="#"
             class="logoText"
             >JANELAND NETWORKS</a
@@ -69,24 +72,31 @@
           </div>
         </div>
 
-        <div class="navitems">
-          <ul class="navitems__ul">
-            <li><a href="">About</a></li>
-            <li><a href="">Companies</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
+      <div class="navitems">
+  <ul class="navitems__ul">
+    <li><a href="">About</a></li>
+    <li class="dropdown">
+      <a href="">Companies</a>
+      <div class="dropdown-content">
+        <a href="./janelandnetworks_global.html">Janeland Networks Global</a>
+        <a href="#">Janeland Networks Limited</a>
+        <a href="https://beannygold.com">BeannyGold Brand</a>
+      </div>
+    </li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+</div>
       </nav>
       <!-- Hero Section-->
       <section class="hero">
         <div class="hero__img">
           <div class="heroImg__bg stacked">
             <!-- <img src="./assets/heroImg.png" alt="" /> -->
-            <div class="contentLoop">
+            <div class="contentLoop padding">
               <img src="./assets/heroImg1.jpg" alt="" class="heroImg" />
             </div>
-            <div class="contentLoop">
+            <div class="contentLoop padding">
               <img
                 src="./assets/_28148de4-21f6-427a-816f-9b60fa6bc77f.jpeg"
                 alt=""
@@ -94,7 +104,7 @@
               />
             </div>
 
-            <div class="contentLoop">
+            <div class="contentLoop padding">
               <img
                 src="./assets/Happy-african-american-woman-eating-pizza-537212683_3499x2638-scaled.jpeg"
                 alt=""
@@ -102,11 +112,11 @@
               />
             </div>
 
-            <div class="contentLoop">
+            <div class="contentLoop padding">
               <img src="./assets/OIP.jpeg" alt="" class="heroImg" />
             </div>
 
-            <div class="contentLoop">
+            <div class="contentLoop padding">
               <img src="./assets/image.png" alt="" class="heroImg" />
             </div>
           </div>
@@ -144,7 +154,7 @@
               <h3 class="heroSelling">Experience the Taste of Togetherness</h3>
               <p>
                 Every food has the power to bring people together. With
-                <span style="font-weight: 900">Janeland</span>, enjoy the
+                <span style="font-weight: 900">Janeland Networks</span>, enjoy the
                 communal spirit of African dining from the comfort of your home.
               </p>
             </div>
@@ -191,6 +201,7 @@
                 autoplay
                 muted
                 loop
+                controls
               ></video>
             </div>
           </div>
@@ -212,7 +223,7 @@
             options that's added to your daily stress.
           </p>
           <p class="aboutContentBody2">
-            At Janeland Global, we’re committed to making healthy eating
+            At Janeland Networks, we’re committed to making healthy eating
             accessible and convenient. Our products and services go beyond food,
             food processing, and merchandising - they’re a promise of a
             healthier, more convenient life. We’re not only providing food -
@@ -234,7 +245,7 @@
               <img src="./images/ellipse-1.svg" alt="Stay healthy icon" />
               <h3>Stay healthy</h3>
             </div>
-            <div class="content">
+            <div class="padding">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
               doloribus reprehenderit nam quae at animi consequatur. Nam
@@ -246,7 +257,7 @@
               <img src="./images/ellipse-3.svg" alt="MAke Gain icon" />
               <h3>Make Gain</h3>
             </div>
-            <div class="content">
+            <div class="padding">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
               doloribus reprehenderit nam quae at animi consequatur. Nam
@@ -258,7 +269,7 @@
               <img src="./images/ellipse-1.svg" alt="Work Less icon" />
               <h3>Work Less</h3>
             </div>
-            <div class="content">
+            <div class="padding">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
               cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
               doloribus reprehenderit nam quae at animi consequatur. Nam
@@ -358,12 +369,12 @@
           <div
             class="brand box-1"
             style="background: url(./images/building.jpeg)"
-            data-text="BeannyGold"
+            data-text="BeannyGold Brand"
             onclick="toggleDetails(this)"
           >
             <div class="details">
               <p>
-                BeannyGold is a brand that offers a variety of bean products.
+                BeannyGold is our brand that offers a variety of bean products.
                 Our products are packaged to make healthy eating convenient,
                 stress-free, and easy for busy people around the world
               </p>
@@ -373,30 +384,27 @@
           <div
             class="brand box-2"
             style="background: url(./images/building2.jpeg)"
-            data-text="Janeland Networks"
+            data-text="Janeland Networks Limited"
             onclick="toggleDetails(this)"
           >
             <div class="details">
               <p>
-                Janeland Networks is a Domestic For-Profit Corporation in the
-                State of Texas. The company was established on Monday, December
-                30, 20192
+                Janeland Networks Limited is a Domestic For-Profit Corporation in Nigeria. The company is duly registered with CAC, NAFDAC and USFDA, and was established 21st, May 2009
               </p>
-              <a href="#">Janeland Networks</a>
+              <a href="#">Janeland Networks Limited</a>
             </div>
           </div>
           <div
             class="brand box-3"
             style="background: url(./images/building3.jpeg)"
-            data-text="Janeland Global"
+            data-text="Janeland Networks Global"
             onclick="toggleDetails(this)"
           >
             <div class="details">
               <p>
-                Sister company to Janeland Networks. More information about
-                Janeland Global will be released in the near future!
+             Sister company to Janeland Networks Limited, Janeland Networks Global Group Inc is a US registered company based in Hilton, Texas!
               </p>
-              <a>Coming Soon</a>
+              <a href="">Visit Janeland Networks Global</a>
             </div>
           </div>
           <!-- <div class="brand box-4" style="--img: url(https://i.postimg.cc/KjqWx5ft/img-4.jpg);" data-text="Tsuki"></div>
@@ -410,76 +418,82 @@
         <div class="benefit">
           <div class="benefit1">
             <div class="benefit__Img">
-              <img src="./images/ellipse-1.svg" alt="Stay healthy icon" />
-              <h3>Stay healthy</h3>
+              <img src="./images/Screenshot 2023-10-13 094911.png" alt="Stay healthy icon" />
+              <h3>Rowland K.</h3>
+              <p>COO / CRO</p>
             </div>
-            <div class="content">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
-              doloribus reprehenderit nam quae at animi consequatur. Nam
-              eveniet, rerum veritatis in deleniti nisi odit?
+            <div class="padding">
+              Responsible for ensuring smooth operations, profitability, and high-value contributions to the organization's success.
             </div>
           </div>
           <div class="benefit2">
             <div class="benefit__Img">
-              <img src="./images/ellipse-3.svg" alt="MAke Gain icon" />
-              <h3>Make Gain</h3>
+              <img src="./images/Screenshot 2023-10-13 094911.png" alt="Make Gain icon" />
+              <h3>John Doe</h3>
+              <p>H R M</p>
             </div>
-            <div class="content">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
-              doloribus reprehenderit nam quae at animi consequatur. Nam
-              eveniet, rerum veritatis in deleniti nisi odit?
+            <div class="padding">
+             In charge of managing the organization's human capital, and implementing strategies that align with clients and  business needs
             </div>
           </div>
           <div class="benefit3">
             <div class="benefit__Img">
-              <img src="./images/ellipse-1.svg" alt="Work Less icon" />
-              <h3>Work Less</h3>
+              <img src="./images/Screenshot 2023-10-13 094911.png" alt="Work Less icon" />
+              <h3>Richie R.</h3>
+              <p>Marketing / Sales </p>
             </div>
-            <div class="content">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-              cupiditate incidunt consequuntur! Cupiditate sapiente accusantium
-              doloribus reprehenderit nam quae at animi consequatur. Nam
-              eveniet, rerum veritatis in deleniti nisi odit?
+            <div class="padding">
+              Responsible for creating winning strategies, as well as uncovering  possibilities available to you as a user our products and services.
             </div>
           </div>
         </div>
       </section>
       <!-- CTA Section -->
       <section class="takeAction">
-        <div class="cta__img"><img src="" alt="CTA Image" /></div>
+        <div class="cta__img">
+          <img src="./assets/contactus__img.png" alt="CTA Image" />
+        </div>
         <div class="cta__content">
           <h3 class="heading1">What you should do</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            commodi cupiditate voluptate obcaecati beatae nam ipsum modi quas,
-            eveniet aliquid veritatis odit nobis mollitia numquam sit at eum
-            ipsa quibusdam!
+          <p class="">
+          <p class="cta__text padding">
+            Ready to join our team? Get in touch with us today and start your journey towards a healthier, more productive lifestyle.
           </p>
-          <div>Contact form</div>
+          </p>
+          <div>
+              <form action="">
+              <input type="text" name="name" id="name" />
+              <input type="email" name="email" id="email" />
+              <input type="text" name="message" id="message" />
+            </form>
+          </div>
         </div>
       </section>
       <!-- Footer -->
       <footer class="footer-section">
         <div class="container">
           <div class="footer-cta pt-5 pb-5">
-            <div class="row">
+            <div class="row footer">
               <div class="col-xl-4 col-md-4 mb-30">
                 <div class="single-cta">
                   <i class="fas fa-map-marker-alt"></i>
                   <div class="cta-text">
                     <h4>Find us</h4>
-                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                    <span>Janeland Networks Limited</span><br>
+                    <span>Rostal Suite. PM News House</span><br>
+                    <span>27, Acme Road, Ikeja.</span><br><span>Lagos, Nigeria</span>                 
                   </div>
                 </div>
+                
               </div>
               <div class="col-xl-4 col-md-4 mb-30">
                 <div class="single-cta">
                   <i class="fas fa-phone"></i>
                   <div class="cta-text">
                     <h4>Call us</h4>
-                    <span>+234 801 2073 6053</span>
+                    <span></span>
+                    <span>+234 801 2073 6053</span><br>
+                    <span>+13468017643</span>
                   </div>
                 </div>
               </div>
@@ -492,29 +506,30 @@
                   </div>
                 </div>
               </div>
+              
             </div>
+            
           </div>
           <div class="footer-content pt-5 pb-5">
             <div class="row">
               <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="footer-widget">
-                  <div class="footer-logo logo">
+                  <div class="footer-logo ">
                     <div>
                       <a href=""
                         ><img
                           src="images/JanelandLogo.png"
                           alt=""
                           style="height: 45px; width: 65px"
-                        /><span style="margin: 0 1rem">janeland </span></a
+                        /><span style="margin: 0 1rem">Janeland Networks </span></a
                       >
                     </div>
                   </div>
                   <div class="footer-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
-                      sed do eiusmod tempor incididuntut consec tetur
-                      adipisicing elit,Lorem ipsum dolor sit amet.
-                    </p>
+                      <p>Partner in your journey
+                towards a healthier, promising and productive lifestyle. Taking the stress 
+                <span style="font-weight: 900">off you</span>, so you can
+                focus on living your <span style="font-weight: 900">best life.</span></p>
                   </div>
                   <div class="footer-social-icon">
                     <span>Follow us</span>
@@ -528,7 +543,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div>
                 <div class="footer-widget">
                   <div class="footer-widget-heading">
                     <h3>Useful Links</h3>
@@ -565,7 +580,7 @@
                   <p>
                     Copyright &copy; 2016, All Right Reserved
                     <a href="https://codepen.io/anupkumar92/"
-                      >Janeland Global</a
+                      >Janeland Networks</a
                     >
                   </p>
                 </div>

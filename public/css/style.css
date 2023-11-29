@@ -1339,7 +1339,7 @@ ul {
     background-color: var(--white-color);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.911) 0px 2px 8px;
-    transform: translatey(10%);
+    transform: translate y(10%);
     text-align: center;
     margin-top: 4rem;
   }

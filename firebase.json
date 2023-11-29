@@ -1,12 +1,12 @@
 {
   "hosting": {
-    "public": "./",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  },
+  "rewrites": [
+    {
+      "source": "/contact-2",
+      "destination": "/contact-2.html"
+    }
+  ]
 }
