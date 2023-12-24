@@ -1,5 +1,119 @@
-section  {
+.janelandGlobal__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
   padding-top: 10vw;
-  height: 100vh;
+  height: 75vh;
+  background: url(../images/people.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0 0 2vw 2vw;
+  margin-inline: 7vw;
+}
+.janelandGlobal__hero::before {
+  content: '';
+  color: rgba(0, 0, 0, 0.18);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 2vw 2vw;
+  background-color: rgba(0, 0, 0, 0.687);
+  z-index: 1;
+}
+.janelandGlobal__hero > :last-child {
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: italic;
+}
 
+.janelandGlobal__hero > * {
+  z-index: 3;
+}
+
+/* Services */
+#services {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5vw;
+  margin-inline: 5vw;
+}
+#services > * {
+  margin-inline: 15px;
+}
+#services > * > h2 {
+  border-bottom: 0.1875rem solid rgb(255, 195, 16);
+  width: 15%;
+  padding-bottom: 0.75vh;
+  text-wrap: wrap;
+  font-size: 20px;
+}
+
+#services section label {
+  cursor: pointer;
+  position: relative;
+  display: block; /* Ensure label takes full width */
+}
+
+#services section label #arrow1,
+label #arrow2,
+label #arrow3 {
+  position: absolute;
+  top: -1%;
+  right: -2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+#services section .expand-checkbox:checked + dd.expanded-content {
+  margin-top: -2vh;
+  max-height: 31.25rem; /* Maximum height when expanded */
+}
+
+#services section .expanded-content {
+  max-height: 10px; /* Initially hidden */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; /* Smooth content expansion */
+  margin-top: -2vh;
+}
+input.expand-checkbox {
+  visibility: hidden;
+}
+.expanded-content > div {
+  padding: 10px 0 10px 0;
+}
+.expanded-content > div > input {
+  position: relative;
+  margin: 10px 0;
+}
+dd {
+  padding-inline: 0;
+}
+
+.outletBtn {
+  font-weight: 700;
+  font-family: var(--ff-secondary);
+  border: 2px solid rgb(255, 166, 0);
+}
+/* mobile */
+@media (max-width: 768px) {
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #services > * > h2 {
+    text-wrap: wrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .janelandGlobal__hero > h1 {
+    font-size: 7.5vh;
+  }
 }

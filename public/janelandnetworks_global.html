@@ -83,25 +83,175 @@
 
         <div class="navitems">
           <ul class="navitems__ul">
-            <li><a href="">About</a></li>
+            <li><a href="./index.html#about-Us">About</a></li>
             <li class="dropdown">
-              <a href="">Companies</a>
+              <a href="./index.html#companies">Companies</a>
               <div class="dropdown-content">
                 <a href="#">Janeland Networks Global</a>
                 <a href="./index.html">Janeland Networks Limited</a>
                 <a href="https://beannygold.com">BeannyGold Brand</a>
               </div>
             </li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#contact-Us">Contact</a></li>
           </ul>
         </div>
       </nav>
       <!-- Hero -->
-      <section>
-        <h2 class="heading2">WELCOME TO</h2>
-        <h1 class="heading1">JANELAND NETWORKS GLOBAL</h1>
+      <section class="janelandGlobal__hero">
+        <p class="heading2">WELCOME TO</p>
+        <h1 class="heading1"><nobr>JANELAND NETWORKS GLOBAL Inc</nobr></h1>
+        <h3 class="heading2">Sister company to Janeland Networks Limited</h3>
       </section>
+
+      <!-- Services -->
+      <section id="services">
+        <section id="merchandising">
+          <h2>Merchandising</h2><!---&nbsp;&amp; Distribution--->
+          <label for="merchandising-content">
+            <dd>Providing you with a diverse range of products.</dd>
+            <svg
+              id="arrow1"
+              onclick="rotateArrow('arrow1')"
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              />
+            </svg>
+          </label>
+          <input
+            type="checkbox"
+            id="merchandising-content"
+            class="expand-checkbox"
+          />
+          <dd class="expanded-content">
+            <div>
+              <h3>Outlets</h3>
+              <p>
+                Through our outlet network, we offer a wide range of products
+                and services ensuring that our products are attractively
+                displayed, well-stocked, and competitively priced to meet the
+                needs of our customers.
+              </p>
+              <input
+                type="button"
+                value="Learn More"
+                type="button"
+                class="outletBtn"
+              />
+            </div>
+            
+          </dd>
+        </section>
+        <section id="manufacturing">
+          <h2>Distribution</h2>
+          <label for="manufacturing-content">
+            <dd>We offer competitive pricing and ensure the
+                quality and quantity of our products.</dd>
+            <svg
+              id="arrow2"
+              onclick="rotateArrow('arrow2')"
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              />
+            </svg>
+          </label>
+          <input
+            type="checkbox"
+            id="manufacturing-content"
+            class="expand-checkbox"
+          />
+          <dd class="expanded-content">
+            <div>
+              <h3>Retail</h3>
+              <p>
+                We specializes in bulk-selling, catering to the needs of
+                large-scale buyers. Our bulk-selling unit is
+                capable of handling substantial orders and delivering them as
+                per the client’s requirements.
+              </p>
+                <input
+                type="button"
+                value="Get Started"
+                type="button"
+                class="outletBtn"
+              />
+            </div>
+            <div>
+              <h3>Wholesales</h3>
+              <p>
+                We excel in retail sales, focusing on the needs of individual customers. Our team is always ready to assist customers in making informed purchasing decisions, ensuring they find the product that best suits their needs. Just so you know, we are committed to providing high-quality products at competitive prices, making us a preferred choice for retail shoppers.
+              </p>
+              <input
+                type="button"
+                value="Learn More"
+                type="button"
+                class="outletBtn"
+              />
+            </div>
+          </dd>
+        </section>
+        <section id="farming">
+          <h2>Farming</h2>
+          <label for="farming-content">
+            <dd><b>Coming soon!</b><br> We are expanding our services to include planting and harvest assistance...</dd>
+            <svg
+              id="arrow3"
+              onclick="rotateArrow('arrow3')"
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+              />
+            </svg>
+          </label>
+          <input type="checkbox" id="farming-content" class="expand-checkbox" />
+          <dd class="expanded-content">
+            <div>
+              <h3>Planting & Harvest</h3>
+              <p>
+               Our dedicated team will provide expert advice and hands-on support for all stages of the planting process, from seed selection to optimal planting times. We will also offer harvest services, ensuring that crops are picked at their peak for maximum yield and quality. Stay tuned for more details on this exciting new service! Or call us at 1-800-123-4567.
+              </p>
+              <input
+                type="button"
+                value="Join our waitlist"
+                type="button"
+                class="outletBtn"
+              />
+            </div>
+            <!-- <div>
+              <h3>Wholesales</h3>
+              <p>
+                We specializes in bulk-selling, catering to the needs of
+                large-scale buyers. We offer competitive pricing and ensure the
+                quality and quantity of our products. Our bulk-selling unit is
+                capable of handling substantial orders and delivering them as
+                per the client’s requirements.
+              </p><input
+                type="button"
+                value="Learn More"
+                type="button"
+                class="outletBtn"
+              /> -->
+            </div>
+          </dd>
+        </section>
+      </section>
+
+      <!-- services end -->
+
       <!-- Footer -->
       <footer class="footer-section">
         <div class="container">
@@ -127,7 +277,7 @@
                     <h4>Call us</h4>
                     <span></span>
                     <span>+234 801 2073 6053</span><br />
-                    <span>+13468017643</span>
+                    <span>+1 346 801 7643</span>
                   </div>
                 </div>
               </div>
@@ -136,7 +286,7 @@
                   <i class="far fa-envelope-open"></i>
                   <div class="cta-text">
                     <h4>Mail us</h4>
-                    <span>janelandnetworks@gmail.com</span>
+                    <span><a style="color:rgb(100, 96, 96) ; font-size: 24px;" href="mailto:info@janelandnetworks.com">info@janelandnetworks.com</a></span>
                   </div>
                 </div>
               </div>

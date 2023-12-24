@@ -61,3 +61,63 @@ function toggleDetails(element) {
   var details = element.querySelector('.details');
   details.classList.toggle('show');
 }
+
+
+// JavaScript for form submission and validation
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Validate inputs using regular expressions
+  var fullNameRegex = /^[A-Za-z\s]+$/;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  var fullNameInput = document.getElementById("full-name");
+  var emailInput = document.getElementById("email");
+
+  if (!fullNameRegex.test(fullNameInput.value)) {
+    alert("Please enter a valid full name.");
+    return;
+  }
+
+  if (!emailRegex.test(emailInput.value)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // Send form data to the specified email address
+  var form = document.getElementById("contact-form");
+  var formData = new FormData(form);
+
+  fetch("https://api.example.com/send-email", {
+    method: "POST",
+    body: formData
+  })
+    .then(function (response) {
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        form.reset();
+      } else {
+        alert("An error occurred. Please try again later.");
+      }
+    })
+    .catch(function (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    });
+});
+
+
+// distribution arrow
+function rotateArrow(arrowId) {
+  const arrow = document.getElementById(arrowId);
+  if (!arrow) {
+    console.error("Arrow element not found!");
+    return;
+  }
+
+  if (arrow.style.transform === "rotate(90deg)") {
+    arrow.style.transform = "rotate(0deg)";
+  } else {
+    arrow.style.transform = "rotate(90deg)";
+  }
+}
